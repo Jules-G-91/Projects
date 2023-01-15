@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* To call var colors from root   color: var(--blue);
+  background-color: var(--white); */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: #253031;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+
+header h1{
+    color: #FF4A1C;
+    margin: 0 0 5rem 0;
+    font-size: 4rem;
+    border-bottom: #FF4A1C 4px solid;
+}
+
+form input{
+    min-width: 250px;
+    min-height: 25px;
+    background-color: #315659;
+    color: #fff;
+    padding: 0 0.5rem;
+    border-radius: 25px 25px 25px 25px;
+    overflow: hidden;
+}
+
+form button{
+    width: 35px;
+    height: 35px;
+    margin: 0 0 0 2rem;
+    background-color: #253031;
+    color: #FF4A1C;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+}
+
+form button:hover{
+    transform: scale(0.9);
+}
+
+.todo {
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 250px;
+    transition: all .5s ease-in-out;
+}
+
+.todo li{
+    flex: 1;
+    margin: 0 5px 0 0;
+}
+
+.todo-item{
+    list-style: none;
+    color: #fff;
+}
+
+.complete-btn{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transition: .5s ease-in-out;
+    color: #FF4A1C;
+    background-color: #253031;
+}
+
+.complete-btn:hover{
+    transform: scale(0.9);
+}
+
+.delete-btn{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transition: .5s ease-in-out;
+    color: #FF4A1C;
+    background-color: #253031;
+    margin: 0 0 0 10px;
+}
+
+.delete-btn:hover{
+    transform: scale(0.9);
+}
+
+.fa-trash, 
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
